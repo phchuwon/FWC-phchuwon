@@ -1,10 +1,9 @@
+#!/bin/bash
+
 if [ $# -eq 0 ]; then
     echo "No arguments supplied"
 else
-    for i in "$1" "$2" "$3"
-    do
-            if [ -n "$i" ]; then
-                echo "$i"
-            fi  
-    done  
+    [ -n "$1" ] && echo "$1"
+    [ -n "$2" ] && echo "$2"
+    [ -n "$3" ] && echo "$3"
 fi
