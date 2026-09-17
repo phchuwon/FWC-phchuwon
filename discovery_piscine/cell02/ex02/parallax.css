@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* รูปที่ 1 */
+.image1 {
+    height: 100vh;
+    background-image: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* รูปที่ 2 */
+.image2 {
+    height: 100vh;
+    background-image: url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ข้อความบนรูป */
+.text {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 20px 30px;
+    font-size: 25px;
+}
+
+/* กล่องสีดำตรงกลาง */
+.black {
+    height: 400px;
+    background-color: black;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 25px;
+}
+    color: white;
+    font-size: 30px;
+
+    padding-bottom: 30px;
+}
