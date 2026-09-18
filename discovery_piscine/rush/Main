@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio — Home</title>
+<link rel="icon" href="data:,">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- hidden SVG filters simulating color-blindness (method A) -->
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <filter id="protanopia">
+      <feColorMatrix type="matrix" values="
+        0.567 0.433 0     0 0
+        0.558 0.442 0     0 0
+        0     0.242 0.758 0 0
+        0     0     0     1 0" />
+    </filter>
+    <filter id="deuteranopia">
+      <feColorMatrix type="matrix" values="
+        0.625 0.375 0   0 0
+        0.7   0.3   0   0 0
+        0     0.3   0.7 0 0
+        0     0     0   1 0" />
+    </filter>
+    <filter id="tritanopia">
+      <feColorMatrix type="matrix" values="
+        0.95 0.05  0     0 0
+        0    0.433 0.567 0 0
+        0    0.475 0.525 0 0
+        0    0     0     1 0" />
+    </filter>
+  </defs>
+</svg>
+
+<nav class="navbar navbar-expand-md site-nav fixed-top">
+  <div class="container-fluid px-3 px-md-4">
+    <a class="navbar-brand" href="#">portfolio.</a>
+
+    <div class="position-relative">
+      <button class="settings-btn" id="settingsBtn" aria-label="เปิดการตั้งค่าการแสดงผลสี" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="3"></circle>
+          <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+        </svg>
+      </button>
+      <div class="settings-panel" id="settingsPanel" role="menu">
+        <div class="settings-label">สำหรับผู้ที่ตาบอดสี</div>
+        <button class="mode-option selected" data-mode="normal" role="menuitemradio" aria-checked="true">
+          <span class="mode-dot"></span> ปกติ
+        </button>
+        <button class="mode-option" data-mode="protanopia" role="menuitemradio" aria-checked="false">
+          <span class="mode-dot"></span> Protanopia (ตาบอดสีแดง)
+        </button>
+        <button class="mode-option" data-mode="deuteranopia" role="menuitemradio" aria-checked="false">
+          <span class="mode-dot"></span> Deuteranopia (ตาบอดสีเขียว)
+        </button>
+        <button class="mode-option" data-mode="tritanopia" role="menuitemradio" aria-checked="false">
+          <span class="mode-dot"></span> Tritanopia (ตาบอดสีน้ำเงิน)
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<main style="padding-top:64px;">
+  <div class="hero-wrap">
+    <div class="circle-peach"></div>
+    <div class="circle-blue"></div>
+    <div class="hero">
+      <p class="eyebrow">RUSH PROJECT — 42 BANGKOK</p>
+      <h1>WELCOME TO MY PORTFOLIO! </h1>
+      <p class="subtitle">SELECT A CHARACTER</p>
+      <div class="links">
+        <a href="member1.html" class="link-btn link-primary">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+          PHONLAKRIT
+        </a>
+        <a href="member2.html" class="link-btn link-secondary">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+          PRAWPITCHA
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <a href="#github">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"></path></svg>
+      github
+    </a>
+  </footer>
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
